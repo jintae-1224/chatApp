@@ -3,8 +3,13 @@ import { Avatar } from "@chakra-ui/avatar";
 import { Button, IconButton } from "@chakra-ui/react";
 import { Flex, Text } from "@chakra-ui/layout";
 import ChatMemeber from "./ChatMember";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../firebaseconfig";
 
 const SideBar = () => {
+
+  const [user] = useAuthState(auth)
+
   return (
     <Flex
       //   bg="blue.100"
@@ -25,8 +30,8 @@ const SideBar = () => {
         p={3}
       >
         <Flex align="center">
-          <Avatar src="" marginEnd={3} />
-          <Text>Alberr Eisnste</Text>
+          <Avatar src={`${user ? user.photoURL : ""}`} marginEnd={3} />
+          <Text>{user?.displayName}</Text>
         </Flex>
         <IconButton
           aria-label="Search database"

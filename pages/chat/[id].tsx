@@ -1,4 +1,5 @@
 import { Flex, Text } from "@chakra-ui/react";
+import Head from "next/head";
 import { useState } from "react";
 import ButtomBar from "../../components/ButtomBar";
 import SideBar from "../../components/SideBar";
@@ -7,6 +8,9 @@ import TopBar from "../../components/TopBar";
 const chat = () => {
   return (
     <Flex h="100vh">
+        <Head>
+            <title>Chat App</title>
+        </Head>
       <SideBar />
       <Flex flex={1} direction="column">
         <TopBar />
