@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from "@chakra-ui/icons";
 import { Avatar } from "@chakra-ui/avatar";
 import { Button, IconButton } from "@chakra-ui/react";
 import { Flex, Text } from "@chakra-ui/layout";
+import ChatMemeber from "./ChatMember";
 
 const SideBar = () => {
   return (
@@ -37,9 +38,14 @@ const SideBar = () => {
       <Button m={5} p={4}>
         New Chat
       </Button>
-      <Flex p={3} align="center" _hover={{ bg: "gray:100", cursor: "pointer" }}>
-        <Avatar src="" marginEnd={3} />
-        <Text>test.gmail.com</Text>
+      <Flex 
+        // overflow="scroll" 
+        direction="column" 
+        // sx={{scrollbarWidth : "none"}}
+      >
+        <ChatMemeber />
+        <ChatMemeber />
+        <ChatMemeber />
       </Flex>
     </Flex>
   );
