@@ -4,11 +4,14 @@ import { Button, IconButton } from "@chakra-ui/react";
 import { Flex, Text } from "@chakra-ui/layout";
 import ChatMemeber from "./ChatMember";
 import { useAuthState } from "react-firebase-hooks/auth";
+import {useCollection} from 'react-firebase-hooks/firestore'
 import { auth } from "../firebaseconfig";
-
+import { collection, query } from "firebase/firestore";
+import { db } from "../firebaseconfig"
 const SideBar = () => {
 
-  const [user] = useAuthState(auth)
+  const [user] = useAuthState(auth);
+  const [snapshot, loading, error] = useCollection(collection(db, "chats"))
 
   return (
     <Flex
