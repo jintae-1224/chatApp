@@ -8,11 +8,12 @@ const chat = () => {
   return (
     <Flex h="100vh">
       <SideBar />
-      <Flex flex={1}>
+      <Flex flex={1} direction="column">
         <TopBar />
         <Flex flex={1}>
-          <ButtomBar />
+          
         </Flex>
+        <ButtomBar />
       </Flex>
     </Flex>
   );
