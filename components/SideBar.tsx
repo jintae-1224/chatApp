@@ -12,7 +12,11 @@ const SideBar = () => {
 
   const [user] = useAuthState(auth);
   const [snapshot, loading, error] = useCollection(collection(db, "chats"))
+  const chats : any = snapshot?.docs.map(doc => ({id : doc.id, ...doc.data()}));
+  const member = chats ? chats[0].users : []
 
+  console.log(member);
+  
   return (
     <Flex
       //   bg="blue.100"
@@ -51,9 +55,9 @@ const SideBar = () => {
         direction="column" 
         // sx={{scrollbarWidth : "none"}}
       >
-        <ChatMemeber />
-        <ChatMemeber />
-        <ChatMemeber />
+        {member?.map((data : any) => (
+          <ChatMemeber key={Math.random()} user={data}/>
+        ))}
       </Flex>
     </Flex>
   );
