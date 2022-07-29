@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import ButtomBar from "../../components/ButtomBar";
 import SideBar from "../../components/SideBar";
@@ -10,8 +10,70 @@ const chat = () => {
       <SideBar />
       <Flex flex={1} direction="column">
         <TopBar />
-        <Flex flex={1}>
-          
+        <Flex flex={1} direction="column" pt={4} mx={5} overflow="scroll" sx={{scrollbarWidth: 'none'}}>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="green.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1} alignSelf="flex-end">
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="green.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1} alignSelf="flex-end">
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="green.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1} alignSelf="flex-end">
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="green.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1} alignSelf="flex-end">
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="green.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1} alignSelf="flex-end">
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="green.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1} alignSelf="flex-end">
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="blue.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1}>
+            <Text>This is dummy message</Text>
+          </Flex>
+          <Flex bg="green.100" w="fit-content" minWidth="100px" borderRadius="lg" padding={3} m={1} alignSelf="flex-end">
+            <Text>This is dummy message</Text>
+          </Flex>
         </Flex>
         <ButtomBar />
       </Flex>
